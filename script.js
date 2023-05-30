@@ -11,6 +11,7 @@ var showCurrentTime = function() {
   var clock = document.getElementById('clock');
   var dogImage = document.getElementById("dog-image")
   var currentTime = new Date();
+  
 
   var hours = currentTime.getHours();
   var minutes = currentTime.getMinutes();
