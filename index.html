@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+  <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        fontFamily: {
+          sans: ["Roboto", "sans-serif"],
+          body: ["Roboto", "sans-serif"],
+          mono: ["ui-monospace", "monospace"],
+        },
+      },
+      corePlugins: {
+        preflight: false,
+      },
+    };
+  </script>
+</head>
+
+<body>
+
+  <div>
+    <div class="flex justify-center">
+      <h1 class="text-[5vmin] font-bold ">Crazy Clock</h1>
+    </div>
+    <div>
+
+      <div class="grid justify-center">
+        <div class="grid justify-center">
+          <h4 class="text-center">
+
+            <div class="h-[20px] text-[8vmin] font-bold">
+              <span id="clock"></span>
+            </div>
+          </h4>
+
+        </div>
+        <img id="dog-image" src="" class="w-[70vmin] mt-[10vmin]" />
+        <div class="flex justify-center m-4">
+          <h2 id="greeting" class="text-[4vmin] font-bold"></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
